@@ -1,5 +1,5 @@
-import connection from '../database/connection';
-import OrderModel from '../database/models/order.model';
+import connection from '../models/connection';
+import OrderModel from '../models/order.model';
 import { IOrder } from '../interfaces/Order';
 
 export default class OrderService {
