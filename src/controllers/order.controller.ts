@@ -8,4 +8,9 @@ export default class OrderController {
     const findOrder = await this.orderService.findAllOrder();
     res.status(200).send(findOrder);
   }
+
+  // async function createOrder(req: Request, res: Response) {
+  //   const newOrder = await this.orderService.createOrder()
+  //   res.status(201).send(newOrder)
+  // }
 }
