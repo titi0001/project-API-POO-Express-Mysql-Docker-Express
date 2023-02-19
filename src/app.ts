@@ -4,10 +4,12 @@ import httpErrorMiddleware from './middlewares/http.error.middleware';
 import productRouter from './routers/products.router';
 import userRouter from './routers/user.router';
 import orderRouter from './routers/orders.router';
+import loginRouter from './routers/login.router';
 
 const app = express();
 
 app.use(express.json());
+app.use('/login', loginRouter);
 app.use('/products', productRouter);
 app.use('/users', userRouter);
 app.use('/orders', orderRouter);
