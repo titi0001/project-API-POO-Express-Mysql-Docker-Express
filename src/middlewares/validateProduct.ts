@@ -6,7 +6,7 @@ const validateFieldsProduct = Joi.object().keys({
   amount: Joi.string().min(3).required(),
 });
 
-export default async function ValidateProduct(req: Request, res: Response, next: NextFunction) {
+export default async function validateProduct(req: Request, res: Response, next: NextFunction) {
   const { error } = await validateFieldsProduct.validate(req.body);
 
   console.log(error?.details[0].type);

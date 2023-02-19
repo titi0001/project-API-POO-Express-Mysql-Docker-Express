@@ -6,7 +6,7 @@ const validateFieldsLogin = Joi.object().keys({
   password: Joi.string().min(6).required(),
 });
 
-export default async function ValidateLogin(req: Request, res: Response, next: NextFunction) {
+export default async function validateLogin(req: Request, res: Response, next: NextFunction) {
   const { error } = await validateFieldsLogin.validate(req.body);
 
   if (error !== undefined) {
