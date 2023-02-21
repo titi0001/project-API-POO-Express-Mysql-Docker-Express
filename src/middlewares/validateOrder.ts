@@ -10,8 +10,6 @@ const validateFieldsOrder = Joi.object().keys({
 export default async function validateOrder(req: Request, res: Response, next: NextFunction) {
   const { error } = await validateFieldsOrder.validate(req.body);
   
-  console.log(error);
-  
   if (error?.details[0].type === 'any.required') {
     return res.status(400).send({ message: error.details[0].message });
   }

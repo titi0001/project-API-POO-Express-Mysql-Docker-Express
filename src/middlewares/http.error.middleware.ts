@@ -7,7 +7,6 @@ const httpErrorMiddleware = (
   res: Response,
   _next: NextFunction, 
 ) => {
-  console.log('err', err);
   const { status, message } = err as HttpException;
   res.status(status).send({ message });
 };

@@ -8,8 +8,6 @@ const orderController = new OrderController();
 const router = Router();
 
 router.get('/', (req, res) => orderController.findAllOrders(req, res));
-router.post('/', authUser, validateOrder);
+router.post('/', authUser, validateOrder, (req, res) => orderController.createOrder(req, res));
 
 export default router;
-
-// (req, res) => orderController.createOrder(req, res)

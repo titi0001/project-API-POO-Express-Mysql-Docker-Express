@@ -9,8 +9,11 @@ export default class OrderController {
     res.status(200).send(findOrder);
   }
 
-  // async function createOrder(req: Request, res: Response) {
-  //   const newOrder = await this.orderService.createOrder()
-  //   res.status(201).send(newOrder)
-  // }
+  async createOrder(req: Request, res: Response):Promise<void> {
+    const { productsIds } = req.body;
+    const { username } = req.body.user;
+    
+    const newOrder = await this.orderService.createOrder(productsIds, username);
+    res.status(201).send(newOrder);
+  }
 }

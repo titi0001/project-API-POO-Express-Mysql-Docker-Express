@@ -8,8 +8,6 @@ const validateFieldsProduct = Joi.object().keys({
 
 export default async function validateProduct(req: Request, res: Response, next: NextFunction) {
   const { error } = await validateFieldsProduct.validate(req.body);
-
-  console.log(error?.details[0].type);
   
   if (error?.details[0].type === 'string.base' || error?.details[0].type === 'string.min') {
     return res.status(422).send({ message: error.details[0].message });
