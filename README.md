@@ -1,33 +1,33 @@
-# Projeto TrybeSmith API
+# TrybeSmith API project
 
-Projeto realizado durante módulo de Back-end do curso de desenvolvimento web da Trybe, Uma API RESTful para uma loja de itens medievais na qual é possível criar, visualizar, deletar e atualizar produtos, pedidos e usuários, desenvolvido com MySQL e arquitetura MSC (model-service-controller).
+Project carried out during the Back-end module of Trybe's web development course, A RESTful API for a medieval items store in which it is possible to create, view, delete and update products, orders and users, developed with MySQL and MSC architecture (model -service-controller).
 
 <details>
-  <summary><strong>O que foi feito</strong></summary></br>
+   <summary><strong>What was done</strong></summary></br>
 
-  Neste projeto desenvolvi uma API e um banco de dados para uma loja de itens medievais utilizando Typescript e Programação Orientada a Objetos(POO).
+   In this project I developed an API and a database for a medieval items store using Typescript and Object Oriented Programming (OOP).
   
-  Nesta aplicação, é possível realizar as operações básicas que se pode fazer em um determinado banco de dados: `CRUD`.
+   In this application, it is possible to carry out the basic operations that can be done in a given database: `CRUD`.
   
-  A aplicação foi desenvolvida com:
+   The application was developed with:
 
-  - `Node.js`
-  - `TypeScript`
-  - `JWT`
-  - `POO`
-  - `Arquitetura MSC`
-  - `docker`
-  - `docker-compose`
-  - `MySql`
-  - `Express`;
+   - `Node.js`
+   - `TypeScript`
+   - `JWT`
+   - `POO`
+   - `MSC Architecture`
+   - `docker`
+   - `docker-compose`
+   - `MySql`
+   - `Express`;
 
 </details>
 <details>
-  <summary><strong>Como rodar o projeto</strong></summary></br>
+   <summary><strong>How to run the project</strong></summary></br>
 
-  **Com Docker:**
+   **With Docker:**
 
-  **:warning: Antes de começar, seu docker-compose precisa estar na versão 1.29 ou superior. [Veja aqui](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-pt) ou [na documentação](https://docs.docker.com/compose/install/) como instalá-lo. No primeiro artigo, você pode substituir onde está com `1.26.0` por `1.29.2`.**
+   **:warning: Before starting, your docker-compose needs to be at version 1.29 or higher. [See here](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-en) or [in the documentation](https ://docs.docker.com/compose/install/) how to install it. In the first article, you can replace where you are with `1.26.0` with `1.29.2`.**
 
 - [ ] `docker-compose up -d`
 - [ ] `docker exec -it trybesmith bash`
@@ -35,9 +35,9 @@ Projeto realizado durante módulo de Back-end do curso de desenvolvimento web da
 - [ ] `npm run restore`
 - [ ] `npm run dev`
 
-**Localmente:**
+**Locally:**
 
-**Necessita ter um banco de dados(MySql) instalado localmente**
+**Needs to have a database (MySql) installed locally**
 
 - [ ] `npm install`
 - [ ] `npm run restore`
@@ -46,23 +46,23 @@ Projeto realizado durante módulo de Back-end do curso de desenvolvimento web da
 </details>
 
 <details>
-  <summary><strong>:memo: Tecnologias utilizadas</strong></summary><br />
+   <summary><strong>:memo: Technologies used</strong></summary><br />
   
-  - `Node.js`
-  - `TypeScript`
-  - `JWT`
-  - `POO`
-  - `Arquitetura MSC`
-  - `docker`
-  - `docker-compose`
-  - `MySql`
-  - `Express`;
+   - `Node.js`
+   - `TypeScript`
+   - `JWT`
+   - `POO`
+   - `MSC Architecture`
+   - `docker`
+   - `docker-compose`
+   - `MySql`
+   - `Express`;
 
 </details>
 <details>
-  <summary><strong>:memo: Habilidades</strong></summary><br />
+   <summary><strong>:memo: Skills</strong></summary><br />
 
-  -  Declarar variáveis e funções com tipagens Typescript;
-  - Construir uma API Node Express utilizando o Typescript;
+   - Declare variables and functions with Typescript typings;
+   - Build a Node Express API using Typescript;
 
 </details>
